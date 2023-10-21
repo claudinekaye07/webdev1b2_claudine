@@ -64,3 +64,7 @@ if (personName == 'Claudine') {
 } else {
     alert ('Only Claudine can enter');
 }
+
+for (var counter2 = 0; counter2 < 100; counter2++) {
+    console.log('github change counter2', counter2)
+}
