@@ -1,0 +1,18 @@
+body {
+    /*background-color: #227fe3; */
+    background-repeat: repeat-x;
+}
+
+.downloadimg {
+    background-image: url("../img/download\ \(1\).jpg");
+    width: 500px;
+    height: 350px;
+    background-position: center;
+    background-size: cover;
+}
+
+#sunsetdescription{
+    color:aqua;
+    text-align: center;
+    
+}

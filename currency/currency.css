@@ -1,0 +1,19 @@
+body {
+    background-color:#eff5f8;
+    font-family: "Roboto", sans-serif;
+}
+
+.button1 {
+    height: 40px;
+    padding: 16px;
+    font-size: 18px;
+    border-radius: 16px;
+}
+
+.date {
+    color: #6392a7;
+}
+
+.circlebutton {
+    background-color: #78a374;
+}

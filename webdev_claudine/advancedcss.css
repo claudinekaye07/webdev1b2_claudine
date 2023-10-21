@@ -1,0 +1,83 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid gray;
+    margin: 50px;
+}
+
+@keyframes animation1 {
+    0% { background-color: aliceblue;width: 25px;}
+    25% { background-color: aquamarine; width: 250px;}
+    50% { background-color: blue; width: 200px;}
+    75% { background-color: yellow; width: 100px;}
+    100% { background-color: olivedrab; width: 200px;}
+}
+
+.animation1 {
+    animation-name: animation1;
+    animation-duration: 20s;
+    background-color: bisque;
+    animation-iteration-count: infinite;
+}
+
+
+.transition{
+    background-color: violet;
+    transition: width 10s, transform 10s;
+}
+
+.transition:hover {
+    width: 500px;
+    transform: translateX(950px);
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform : rotate(360deg)
+    }
+    
+}
+.rotate-element{
+    transform: rotate(45deg);
+    background-color: green;
+    animation: rotation 10s infinite linear;
+}
+
+.scale-element{
+    transform: scale(1.5);
+    background-color: blue;
+    animation: cresendo 10s alternate infinite ease-in;
+}
+
+@keyframes cresendo {
+    0% {transform: scale(1.5);}
+    60% {transform: scale(2.5);}
+}
+
+.skew-element {
+    transform: skewX(-20deg);
+    background-color: yellow;
+}
+
+.translate-element {
+    transform: translate(50px, 20px);
+    background-color:orange ;
+    animation: MoveUpDown 10s linear infinite;
+    position: relative;
+}
+
+@keyframes MoveUpDown {
+    0%, 100% {
+        bottom: 0;
+    }
+    50% {
+        bottom: 300px;
+    }
+}
+
+.combined-tranform {
+    transform: rotate(45deg) scale(1.5) skew(10deg, 5deg) translate(20px, 10px);
+    background-color: black;
+}
